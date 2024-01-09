@@ -1,15 +1,15 @@
 README (everything you see here is a work in progress)
 
-COMPILE
+COMPILE<br>
 compile with the following: gcc BellmansForest.c -Wall -Werror --std=c99 -lm -O3 -o Bellman
 
-TO DO
+TO DO<br>
 refacor the code to parallelize. Unfortunately, not enough forethrought was put into running in parallel, on the other hand, refactoring is not terribly
 difficult. I may also refator to take advantage of cuda C. Thus, this program is simply a proof of concept in its current form. With better data structures, 
 I suspect cuda C could speed up the program 100 fold. But I'm doing other shit right now and will get to it later. This code does not preform particularly 
 well at the moment but provides a foundation. I'f you'd like to use this code academically let me know. 
 
-WHAT THIS PROGRAM DOES
+WHAT THIS PROGRAM DOES<br>
 A genetic algorithm approach to solving Bellman's lost-in-a-forest problem written in C. This was a weekend project that I might revisit in the near future. 
 Briefly, escape paths are represented by pairs of distances and angles (r,theta). A hypotherical escape path with three segments would look something like:
 (0.000, 0.501) -> (2.056, 1.462) -> (1.456, 300). This represents the set of instructions to turn 0.000 radians and walk straight for 0.501 units, turn 2.056
@@ -40,7 +40,7 @@ OPTIONS:<br>
 <br><br>--survivors <int> tells the program how many individuals each generation survive to the next 
 	generation. Note that the population must be >= children + survivors.
 
-NOTES ON PROVIDING A CUSTOM FOREST:
+<br>NOTES ON PROVIDING A CUSTOM FOREST:<br>
 	a custom forest can be provided as a text file with each x-y vertex listed counterclockwise. for example, A square forest can be defined as follows:
 <br>
 	30.00   30.00
@@ -51,7 +51,7 @@ NOTES ON PROVIDING A CUSTOM FOREST:
 	it is recommended to put the forest in the first quadrant with coordinates < 100. The forest does not have to be convex. Behavior has not been tested
 	for disconnected forests. The size of the forest should not exceed 1000 verticies. Several forests are provided in this repo. 
 
-EXAMPLES:
+EXAMPLES:<br>
 
 	find the best escape path for a rectangular forest. Use 7 segments in the escape, a grid size of 1.1, and 200 test angles. Optimize for 500 generations.
 	Save the data to "forestData.txt" file.
@@ -65,12 +65,12 @@ EXAMPLES:
 	of 200 with 100 children and 80 survivors each generation. Save the data to "forestData.txt" file.
 	./Bellman --gridsize 1.0 --segments 3 --hull 3 --generations 100 --angles 200 --population 200 --children 100 --survivors 80 > forestData.txt
 	
-PLOTTING:
+PLOTTING:<br>
 	stdout produces a dataframe with point data over three columns: x, y, and type of point. If redirected to a file (forestData.txt) a plotting function
 	is provided to visualize the results of the optimization:
-	
+	<br>
 	python3 plotForest.py
-	
+	<br>
 	This will create a figure (combined_plot.png) with 6 subplots
 	1) the forest with grid points.
 	2) the best escape strategy including the elongated final radius
