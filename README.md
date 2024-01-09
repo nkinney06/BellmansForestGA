@@ -27,17 +27,17 @@ type of point. The latter provides a progress update for each generation of the 
 which is printed to stderr. The plotForest.py script is designed to plot the contents of stdout (see below).
 
 OPTIONS:<br>
-<br>--gridsize <float> tells the program how to space test points in the forest. 
-<br>--segments <int> tells the program how many segments to use in the escape path.
-<br>--forest <string> supply a filename containing verticies of the forest (see below)
-<br>--generations <int> tells the program how many generations to run the genetic algorithm
-<br>--angles <int> tells the program how many test angles to use when testing the escape paths
-<br>--hull <int> if you do not supply a forest function you can generate a forest with the hull option.
+<br><br>--gridsize <float> tells the program how to space test points in the forest. 
+<br><br>--segments <int> tells the program how many segments to use in the escape path.
+<br><br>--forest <string> supply a filename containing verticies of the forest (see below)
+<br><br>--generations <int> tells the program how many generations to run the genetic algorithm
+<br><br>--angles <int> tells the program how many test angles to use when testing the escape paths
+<br><br>--hull <int> if you do not supply a forest function you can generate a forest with the hull option.
 	The program will generate a pseudo-random forest with the number of requested verticies.
-<br>--population <int> number of individuals in the population
-<br>--children <int> tells the program how many offspring to make each generation using the
+<br><br>--population <int> number of individuals in the population
+<br><br>--children <int> tells the program how many offspring to make each generation using the
 	current generation as parents
-<br>--survivors <int> tells the program how many individuals each generation survive to the next 
+<br><br>--survivors <int> tells the program how many individuals each generation survive to the next 
 	generation. Note that the population must be >= children + survivors.
 
 NOTES ON PROVIDING A CUSTOM FOREST:
