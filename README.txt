@@ -76,4 +76,5 @@ PLOTTING:
 	4) the worste case scenario for each generation of the run.
 	5) the final best escape strategy plotted inside the forest
 	6) zoom view of the best escape strategy
-	
+
+![alt text](https://github.com/nkinney06/BellmansForestGA/blob/main/example_plot.png?raw=true)
