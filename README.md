@@ -26,28 +26,28 @@ The program produces two output streams: one to stdout and the other to stderr. 
 type of point. The latter provides a progress update for each generation of the genetic algorithm. The program makes a final check of the minimized distance
 which is printed to stderr. The plotForest.py script is designed to plot the contents of stdout (see below).
 
-OPTIONS:
---gridsize <float> tells the program how to space test points in the forest. 
---segments <int> tells the program how many segments to use in the escape path.
---forest <string> supply a filename containing verticies of the forest (see below)
---generations <int> tells the program how many generations to run the genetic algorithm
---angles <int> tells the program how many test angles to use when testing the escape paths
---hull <int> if you do not supply a forest function you can generate a forest with the hull option.
+OPTIONS:<br>
+<br>--gridsize <float> tells the program how to space test points in the forest. 
+<br>--segments <int> tells the program how many segments to use in the escape path.
+<br>--forest <string> supply a filename containing verticies of the forest (see below)
+<br>--generations <int> tells the program how many generations to run the genetic algorithm
+<br>--angles <int> tells the program how many test angles to use when testing the escape paths
+<br>--hull <int> if you do not supply a forest function you can generate a forest with the hull option.
 	The program will generate a pseudo-random forest with the number of requested verticies.
---population <int> number of individuals in the population
---children <int> tells the program how many offspring to make each generation using the
+<br>--population <int> number of individuals in the population
+<br>--children <int> tells the program how many offspring to make each generation using the
 	current generation as parents
---survivors <int> tells the program how many individuals each generation survive to the next 
+<br>--survivors <int> tells the program how many individuals each generation survive to the next 
 	generation. Note that the population must be >= children + survivors.
 
 NOTES ON PROVIDING A CUSTOM FOREST:
 	a custom forest can be provided as a text file with each x-y vertex listed counterclockwise. for example, A square forest can be defined as follows:
-
+<br>
 	30.00   30.00
 	60.0    30.00
 	60.0    60.00
 	30.00   60.00
-
+<br>
 	it is recommended to put the forest in the first quadrant with coordinates < 100. The forest does not have to be convex. Behavior has not been tested
 	for disconnected forests. The size of the forest should not exceed 1000 verticies. Several forests are provided in this repo. 
 
