@@ -47,10 +47,11 @@ NOTES ON PROVIDING A CUSTOM FOREST:
 	60.0    60.00
 	30.00   60.00
 
-	is is recommended to put the forest in the first quadrant with coordinates < 100. The forest does not have to be convex. Behavior has not been tested
+	it is recommended to put the forest in the first quadrant with coordinates < 100. The forest does not have to be convex. Behavior has not been tested
 	for disconnected forests. The size of the forest should not exceed 1000 verticies. Several forests are provided in this repo. 
 
 EXAMPLES:
+
 	find the best escape path for a rectangular forest. Use 7 segments in the escape, a grid size of 1.1, and 200 test angles. Optimize for 500 generations.
 	Save the data to "forestData.txt" file.
 	./Bellman --gridsize 1.1 --segments 7 --forest rectangle.txt --generations 500 --angles 200 > forestData.txt
