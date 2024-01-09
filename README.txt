@@ -77,4 +77,4 @@ PLOTTING:
 	5) the final best escape strategy plotted inside the forest
 	6) zoom view of the best escape strategy
 
-![alt text](https://github.com/nkinney06/BellmansForestGA/blob/main/example_plot.png?raw=true)
+![Screenshot](example_plot.png)
