@@ -6,7 +6,8 @@ compile with the following: gcc BellmansForest.c -Wall -Werror --std=c99 -lm -O3
 TO DO
 refacor the code to parallelize. Unfortunately, not enough forethrought was put into running in parallel, on the other hand, refactoring is not terribly
 difficult. I may also refator to take advantage of cuda C. Thus, this program is simply a proof of concept in its current form. With better data structures, 
-I suspect cuda C could speed up the program 100 fold.
+I suspect cuda C could speed up the program 100 fold. But I'm doing other shit right now and will get to it later. This code does not preform particularly 
+at the moment but provides a foundation. I'f you'd like to use this code academically let me know. 
 
 WHAT THIS PROGRAM DOES
 A genetic algorithm approach to solving Bellman's lost-in-a-forest problem written in C. This was a weekend project that I might revisit in the near future. 
